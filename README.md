@@ -75,4 +75,15 @@ ON ad.city_id = ci.city_id
 group by city_name
 ```
 ![city](https://user-images.githubusercontent.com/77542685/204294047-88360035-2167-431d-9f8c-ceaac4da4948.png)
+# ----------------------------Having--------------------------------------------------------------------------------------------
+```sql
+-- Sipariş adedi 1 in üzerinde olan siparişleri gösterir
+SELECT order_quantity from o
+rders 
+group by order_quantity 
+having max(order_quantity)>1
+```
+![having](https://user-images.githubusercontent.com/77542685/204304733-49ea392b-4d03-41de-9e8b-eaee25617d90.png)
+
+# ----------------------------Update-------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------------------------------
