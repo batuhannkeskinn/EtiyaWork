@@ -56,7 +56,7 @@ select * from Customers cm left join Orders ord
 on cm.customer_id = ord.customer_id
 ```
 ![alll](https://user-images.githubusercontent.com/77542685/204292981-940a0e8b-965b-4e70-91ae-c9fab56139cb.png)
-# ---------------------------RightJoin-------------------------------------------------------------------------------------------
+# ---------------------------RightJoin------------------------------------------------------------------------------------------
 ```sql
 --Ürünü belli olup alıcısı belli olmayan siperişleri de getiren sorgu (Right join)
 select * from Customers cm RIGHT join Orders ord 
