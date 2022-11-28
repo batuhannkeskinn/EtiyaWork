@@ -30,7 +30,7 @@ select * from adresses
 ```
 ![delete](https://user-images.githubusercontent.com/77542685/204291159-7a4263d9-591b-442b-98fb-a0f323c3503d.png)
 
-# ---------------------------InnerJoin--------------------------------------------------------------------------------------------
+# ---------------------------InnerJoin------------------------------------------------------------------------------------------
 ```sql
 --Bir müşterinin siparişlerini hangi bankayla ödendediğini göster
 Select first_name, last_name,bank_name
@@ -42,21 +42,21 @@ on ord.order_id = pa.order_id
 Where first_name = 'aytekin'
 ```
 ![batu](https://user-images.githubusercontent.com/77542685/204290302-4e4c0dca-f557-4500-804e-09646014130c.png)
-# --------------------------FullOuterJoin-----------------------------------------------------------------------------------------
+# --------------------------FullOuterJoin---------------------------------------------------------------------------------------
 ```sql
 --Customer ile Orders tablosunun çıktılarını hep beraber al (full outer join)
 select * from Customers cm full outer join Orders ord 
 on cm.customer_id = ord.customer_id ;
 ```
 ![all](https://user-images.githubusercontent.com/77542685/204292572-ce7e545d-e84c-416b-bb51-5f5f7c8111ac.png)
-# ----------------------------LeftJoin--------------------------------------------------------------------------------------------
+# ----------------------------LeftJoin-------------------------------------------------------------------------------------------
 ```sql
 --Alıcısı belli olmayan siparişleri getirmeyen sorgu (Left Join)
 select * from Customers cm left join Orders ord 
 on cm.customer_id = ord.customer_id
 ```
 ![alll](https://user-images.githubusercontent.com/77542685/204292981-940a0e8b-965b-4e70-91ae-c9fab56139cb.png)
-# ---------------------------RightJoin--------------------------------------------------------------------------------------------
+# ---------------------------RightJoin-------------------------------------------------------------------------------------------
 ```sql
 --Ürünü belli olup alıcısı belli olmayan siperişleri de getiren sorgu (Right join)
 select * from Customers cm RIGHT join Orders ord 
