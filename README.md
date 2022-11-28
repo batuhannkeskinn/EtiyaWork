@@ -30,7 +30,7 @@ select * from adresses
 ```
 ![delete](https://user-images.githubusercontent.com/77542685/204291159-7a4263d9-591b-442b-98fb-a0f323c3503d.png)
 
-# ---------------------------InnerJoin------------------------------------------------------------------------------------------
+# ---------------------------InnerJoin-------------------------------------------------------------------------------------------
 ```sql
 --Bir müşterinin siparişlerini hangi bankayla ödendediğini göster
 Select first_name, last_name,bank_name
