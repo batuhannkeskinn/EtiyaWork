@@ -63,7 +63,7 @@ select * from Customers cm RIGHT join Orders ord
 on cm.customer_id = ord.customer_id 
 ```
 ![all](https://user-images.githubusercontent.com/77542685/204293354-60bf5d14-446c-47bf-a892-a365bc464825.png)
-# ----------------------------GroupBy---------------------------------------------------------------------------------------------
+# ----------------------------GroupBy------------------------------------------------------------------------------------------
 ```sql
 --Şehirlerde kaç adet kayıtlı kullanıcı olduğunu gösterir.
 select city_name,count(city_name)
