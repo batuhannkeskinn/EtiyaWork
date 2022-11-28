@@ -6,7 +6,7 @@ where customer_id = 1
 ```
 ![update](https://user-images.githubusercontent.com/77542685/204286831-cb54072d-dd68-4c73-9b13-9bc28e4f90d4.png)
 
-# --------------------------------Insert Into---------------------------------
+# --------------------------InsertInto------------------------------------------------------------------------------------------
 
 ```sql
 INSERT INTO Customer (name,first_name,last_name,email,phone_number)
@@ -15,7 +15,7 @@ Select * from customers
 ```
 ![Screenshot 2022-11-28 162445](https://user-images.githubusercontent.com/77542685/204288756-055cebba-9f0f-494e-82c9-c28dad6bcf94.png)
 
-# ---------------------------------Between----------------------------------
+# ----------------------------Between-------------------------------------------------------------------------------------------
 ```sql
 --Product tablosunda ki fiyat aralığı  0 ve 10 aralığında bulunan ürünlere indirim uygulanıp sıralaması yapıldı.
 UPDATE products SET unit_price =unit_price-3
@@ -23,7 +23,7 @@ WHERE unit_price BETWEEN 0 AND 10;
 SELECT name , unit_price FROM products WHERE unit_price BETWEEN 0 AND 10;
 ```
 ![luppo](https://user-images.githubusercontent.com/77542685/204289657-eba71d5b-79e9-499a-a42e-d68ea3a92b2c.png)
-# ----------------------------------Delete----------------------------------
+# ----------------------------Delete---------------------------------------------------------------------------------------------
 ```sql 
 Delete from  addresses where address_id = 1  
 select * from adresses
